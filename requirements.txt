@@ -1,0 +1,8 @@
+lightning
+wandb
+optuna
+optuna-dashboard
+shap
+pandas
+matplotlib
+scikit-learn
