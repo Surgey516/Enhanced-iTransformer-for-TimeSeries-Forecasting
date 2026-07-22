@@ -5,7 +5,7 @@ import torch
 import pandas as pd
 from torch.utils.data import DataLoader, Dataset
 from models.itransformer import iTransformer
-from data.data_utils import load_and_preprocess, split_data
+from data_utils import load_and_preprocess, split_data
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 import wandb
 import numpy as np
@@ -13,7 +13,7 @@ import numpy as np
 optuna.logging.set_verbosity(optuna.logging.WARNING)
 DB_PATH = 'sqlite:///optuna_trials.db'
 DATASETS = ['ETTm1','ETTm2','ETTh1','ETTh2']
-DATA_PATH = './data/ETTl/'
+DATA_PATH = './ETTl/'
 BATCH_SIZE = 32
 SEQ_LEN = 96
 PRED_LEN = 24
