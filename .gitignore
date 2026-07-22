@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+
+# Lightning / wandb
+lightning_logs/
+iTransformer-ETT/
+wandb/
+
+# Optuna
+*.db
+
+# Generated outputs (keep data/ETTl/ CSVs)
+/*.csv
+/*.png
+Results/
+
+# IDE
+.vscode/
+.idea/

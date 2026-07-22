@@ -4,11 +4,11 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from models.itransformer import iTransformer
-from data_utils import load_and_preprocess, split_data
+from data.data_utils import load_and_preprocess, split_data
 from torch.utils.data import DataLoader, Dataset
 
 DATASETS = ['ETTm1', 'ETTm2', 'ETTh1', 'ETTh2']
-DATA_PATH = './ETTl/'
+DATA_PATH = './data/ETTl/'
 BATCH_SIZE = 32
 SEQ_LEN = 96
 PRED_LEN = 24

@@ -7,14 +7,14 @@ import numpy as np
 import pandas as pd
 from torch.utils.data import DataLoader, Dataset
 from models.itransformer import iTransformer
-from data_utils import load_and_preprocess, split_data, scale_data
+from data.data_utils import load_and_preprocess, split_data, scale_data
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 import wandb
 
 L.seed_everything(42)
 
 DATASETS = ['ETTm1', 'ETTm2', 'ETTh1', 'ETTh2']
-DATA_PATH = './ETTl/'
+DATA_PATH = './data/ETTl/'
 BATCH_SIZE = 32
 SEQ_LEN = 96
 PRED_LEN = 24
