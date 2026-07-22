@@ -4,10 +4,10 @@ import shap
 import torch
 import numpy as np
 from models.itransformer import iTransformer
-from data_utils import load_and_preprocess, split_data
+from data.data_utils import load_and_preprocess, split_data
 
 DATASETS = ['ETTm1', 'ETTm2', 'ETTh1', 'ETTh2']
-DATA_PATH = './ETTl/'
+DATA_PATH = './data/ETTl/'
 BATCH_SIZE = 32
 SEQ_LEN = 96
 PRED_LEN = 24
